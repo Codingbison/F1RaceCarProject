@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Race-car Info</title>
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>F1 Race-car APIs</h1>
+
+    <h4>Form for F1 Racer Data</h4>
+    <form name="f1RacerForm" id="f1RacerForm">
+        <label for="season">Season</label>
+        <input type="text" name="season" id="season">
+        <label for="round">Round</label>
+        <input type="text" name="round" id="round">
+        <button type="button" onClick="getJson()">Get Standings</button>
+    </form>
+    <table>
+        <tr>
+          <th>Position</th>
+          <th>Name</th>
+          <th>Nationality</th>
+          <th>Sponser</th>
+          <th>Points</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

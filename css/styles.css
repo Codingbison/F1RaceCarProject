@@ -1,0 +1,18 @@
+.color-change{
+    color: green;
+}
+
+table {
+    font-family: arial, sans-serif;
+    width: 100%;
+    margin-top: 40px;
+  }
+  
+  table, td {
+    border: 3px solid blue;
+    text-align: left;
+    padding: 9px;
+    background-color: cadetblue;
+  }
+  
+ 
