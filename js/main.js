@@ -13,17 +13,19 @@ function getJson(){
         given_name_text.innerHTML = givenName
         document.body.append(given_name_text)
         // Family Name
-        let familyName = rawData.MRData.StandingsTable.StandingsLists[0].DriverStandings[0].Driver.familyName
-        let familyName_text = document.querySelector('#familyName')
-        familyName_text.innerHTML = familyName
+        //let familyName = rawData.MRData.StandingsTable.StandingsLists[0].DriverStandings[0].Driver.familyName
+        //let familyName_text = document.querySelector('#familyName')
+        //familyName_text.innerHTML = familyName
 
         
         // Get first 5 Constructors for F1 Cars
-        for(let i = 0; i < 5; i++){
-            let constructors_name = rawData.MRData.StandingsTable.StandingsLists[0].DriverStandings[i].Constructors[0].name;
-            let display_constructors = document.createElement('h1')
-            display_constructors.innerHTML = constructors_name
-            document.body.append(display_constructors)
+        for(let i = 0; i < 3; i++){
+            let position = rawData.MRData.StandingsTable.StandingsLists[0].DriverStandings[i].position
+            let position_selector = document.querySelector(`#position-${i+1}`)
+            position_selector.innerHTML = position
+            let nationality = rawData.MRData.StandingsTable.StandingsLists[0].DriverStandings[i].Driver.nationality
+            let nationality_selector = document.querySelector(`#nationality-${i+1}`)
+            nationality_selector.innerHTML = nationality
         }
     })
     console.log(season,round)
